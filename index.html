@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>PREMIUM GROUP</title>
+
+
+<!-- =========================
+     META PIXEL
+========================= -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1421574346569576');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1"
+     width="1"
+     style="display:none"
+     src="https://www.facebook.com/tr?id=1421574346569576&ev=PageView&noscript=1"/>
+</noscript>
+
+
+<!-- =========================
+     FONT
+========================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:"Inter", Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 18%,
+            rgba(119,62,255,.30),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 85%,
+            rgba(0,119,255,.15),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #05050d 0%,
+            #0a0b18 50%,
+            #090513 100%
+        );
+
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:22px 14px;
+
+    overflow-x:hidden;
+}
+
+
+/* Background glow */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:420px;
+    height:420px;
+
+    top:-170px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#6d28d9;
+
+    filter:blur(130px);
+
+    opacity:.18;
+
+    pointer-events:none;
+}
+
+
+/* =========================
+   IPHONE SIZE
+========================= */
+
+.phone{
+
+    width:100%;
+    max-width:390px;
+
+    min-height:650px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card{
+
+    width:100%;
+
+    min-height:620px;
+
+    padding:42px 22px 30px;
+
+    border-radius:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18,19,40,.97),
+            rgba(7,8,20,.98)
+        );
+
+    border:1px solid rgba(126,77,255,.35);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,.015),
+        0 25px 80px rgba(0,0,0,.55),
+        0 0 80px rgba(101,52,255,.12);
+}
+
+
+/* Card top line */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:8%;
+
+    width:84%;
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #9a6cff,
+            #44c8ff,
+            transparent
+        );
+
+    opacity:.9;
+}
+
+
+/* Inner glow */
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    top:100px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#642cff;
+
+    filter:blur(110px);
+
+    opacity:.08;
+
+    pointer-events:none;
+}
+
+
+/* =========================
+   TOP LABEL
+========================= */
+
+.top-label{
+
+    text-align:center;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:6px;
+
+    color:#55bfff;
+
+    margin-bottom:28px;
+
+    text-shadow:
+        0 0 12px rgba(66,180,255,.55);
+}
+
+.top-label span{
+
+    color:#8f55ff;
+
+    margin:0 7px;
+}
+
+
+/* =========================
+   DP
+========================= */
+
+.dp-area{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    margin-bottom:30px;
+}
+
+
+/* DP glow */
+
+.dp-glow{
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(120,60,255,.8),
+            rgba(42,139,255,.35),
+            transparent 70%
+        );
+
+    filter:blur(18px);
+
+    animation:dpGlow 2.8s ease-in-out infinite;
+}
+
+
+@keyframes dpGlow{
+
+    0%,100%{
+        transform:scale(.92);
+        opacity:.75;
+    }
+
+    50%{
+        transform:scale(1.08);
+        opacity:1;
+    }
+}
+
+
+/* DP ring */
+
+.dp-ring{
+
+    width:156px;
+    height:156px;
+
+    padding:5px;
+
+    border-radius:50%;
+
+    position:relative;
+    z-index:2;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3cff,
+            #a66cff,
+            #36c9ff,
+            #7435ff
+        );
+
+    box-shadow:
+        0 0 18px rgba(119,66,255,.9),
+        0 0 45px rgba(76,109,255,.55);
+}
+
+
+.dp{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:50%;
+
+    border:4px solid #090a18;
+
+    background:#0a0b18;
+}
+
+
+/* =========================
+   HEADLINE
+========================= */
+
+.headline{
+
+    position:relative;
+    z-index:3;
+
+    text-align:center;
+
+    /*
+       SIMPLE STRAIGHT FONT
+       No italic / no slant
+    */
+
+    font-family:"Inter", Arial, sans-serif;
+
+    font-size:36px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    font-style:normal;
+
+    letter-spacing:-.5px;
+
+    color:#ffffff;
+
+    margin-top:5px;
+
+    text-shadow:
+        0 0 22px rgba(145,93,255,.22);
+}
+
+
+/* #1 */
+
+.headline .gradient{
+
+    display:inline;
+
+    font-family:"Inter", Arial, sans-serif;
+
+    font-style:normal;
+
+    font-weight:800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b785ff,
+            #ffffff,
+            #b785ff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+
+/* =========================
+   LINE
+========================= */
+
+.line{
+
+    width:76px;
+    height:3px;
+
+    margin:22px auto 27px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #853eff,
+            #4acbff
+        );
+
+    box-shadow:
+        0 0 15px rgba(121,66,255,.8);
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description{
+
+    text-align:center;
+
+    color:#9da4cc;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    font-weight:500;
+
+    margin:0 auto 36px;
+
+    max-width:290px;
+}
+
+
+/* =========================
+   TELEGRAM BUTTON
+========================= */
+
+.telegram-btn{
+
+    display:block;
+
+    width:100%;
+
+    height:64px;
+
+    border-radius:20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            100deg,
+            #792cff 0%,
+            #6845ff 48%,
+            #348fff 100%
+        );
+
+    border:1px solid rgba(255,255,255,.20);
+
+    box-shadow:
+        0 0 18px rgba(103,55,255,.75),
+        0 10px 35px rgba(80,54,255,.35);
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+}
+
+
+/* Button glow */
+
+.telegram-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:75%;
+    height:100%;
+
+    transform:translate(-50%,-50%);
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(151,94,255,.9),
+            transparent 70%
+        );
+
+    filter:blur(25px);
+
+    opacity:.65;
+
+    z-index:0;
+}
+
+
+/* Moving shine */
+
+.telegram-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-40%;
+
+    left:-70%;
+
+    width:45%;
+    height:180%;
+
+    transform:rotate(20deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.15),
+            rgba(255,255,255,.8),
+            rgba(255,255,255,.15),
+            transparent
+        );
+
+    filter:blur(3px);
+
+    animation:
+        buttonShine 2.3s linear infinite;
+}
+
+
+@keyframes buttonShine{
+
+    0%{
+        left:-70%;
+    }
+
+    100%{
+        left:140%;
+    }
+}
+
+
+/* Button click */
+
+.telegram-btn:active{
+
+    transform:scale(.97);
+
+    box-shadow:
+        0 0 30px rgba(103,55,255,.95),
+        0 8px 25px rgba(80,54,255,.45);
+}
+
+
+/* Button content */
+
+.button-content{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    position:relative;
+
+    z-index:5;
+}
+
+
+.button-text{
+
+    font-size:17px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    color:white;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.2);
+}
+
+
+.arrow{
+
+    font-size:25px;
+
+    line-height:1;
+
+    animation:
+        arrowMove 1.1s ease-in-out infinite;
+}
+
+
+@keyframes arrowMove{
+
+    0%,100%{
+        transform:translateX(0);
+    }
+
+    50%{
+        transform:translateX(5px);
+    }
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom-text{
+
+    text-align:center;
+
+    color:#777d9e;
+
+    font-size:11px;
+
+    margin-top:25px;
+
+    letter-spacing:.3px;
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:380px){
+
+    body{
+        padding:15px 10px;
+    }
+
+    .card{
+        padding:35px 18px 27px;
+        min-height:600px;
+    }
+
+    .headline{
+        font-size:32px;
+    }
+
+    .dp-ring{
+        width:140px;
+        height:140px;
+    }
+
+    .dp-glow{
+        width:165px;
+        height:165px;
+    }
+
+    .telegram-btn{
+        height:60px;
+    }
+}
+
+</style>
+<!-- Invisible Bot Filter Script -->
+<script>
+(function() {
+    // 1. Check if user is using headless browser or automated tools (Selenium/Puppeteer)
+    const isBot = navigator.webdriver || 
+                  !navigator.languages || 
+                  navigator.languages.length === 0 ||
+                  /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+
+    // 2. Action if Bot Detected
+    if (isBot) {
+        // Option A: Bot ko blank page par bhej do
+        window.location.href = "about:blank";
+        
+        // Option B: Ya bot ko kisi fake page par redirect kar do
+        // window.location.href = "https://google.com";
+    }
+})();
+</script>
+</head>
+
+
+<body>
+
+<main class="phone">
+
+<section class="card">
+
+
+<!-- TOP -->
+
+<div class="top-label">
+
+    <span>◆</span>
+
+    RADHE GROW
+
+    <span>◆</span>
+
+</div>
+
+
+<!-- DP -->
+
+<div class="dp-area">
+
+    <div class="dp-glow"></div>
+
+    <div class="dp-ring">
+
+        <img
+            class="dp"
+            src="https://d1yei2z3i6k35z.cloudfront.net/9021055/6a9e3d642f5154.61489927_3947.png"
+            alt="RADHE GROW"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- HEADLINE -->
+
+<h1 class="headline">
+
+    RADHE BHAI <span class="gradient">#1</span>
+
+</h1>
+
+
+<!-- LINE -->
+
+<div class="line"></div>
+
+
+<!-- DESCRIPTION -->
+
+<p class="description">
+
+    Daily market levels and setups.<br>
+    Free to join.
+
+</p>
+
+
+<!-- TELEGRAM -->
+
+<a
+    id="telegramButton"
+    class="telegram-btn"
+    href="https://t.me/+BSpa76Zg6XplZTdl"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+
+    <div class="button-content">
+
+        <span class="button-text">
+            JOIN TELEGRAM
+        </span>
+
+        <span class="arrow">
+            ➜
+        </span>
+
+    </div>
+
+</a>
+
+
+<!-- BOTTOM -->
+
+<p class="bottom-text">
+
+    Tap to open Telegram and join the channel.
+
+</p>
+
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+     EVENT TRACKING
+========================= -->
+
+<script>
+
+const telegramButton =
+    document.getElementById("telegramButton");
+
+
+telegramButton.addEventListener("click", function(){
+
+    if(typeof fbq === "function"){
+
+        /* Standard Meta Lead Event */
+
+        fbq(
+            "track",
+            "Lead",
+            {
+                content_name:"Telegram Join Click",
+                content_category:"Telegram",
+                button_name:"JOIN TELEGRAM"
+            }
+        );
+
+
+        /* Custom Telegram Click Event */
+
+        fbq(
+            "trackCustom",
+            "TelegramClick",
+            {
+                button_name:"JOIN TELEGRAM",
+                destination:"Telegram"
+            }
+        );
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
